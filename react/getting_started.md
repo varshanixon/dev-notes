@@ -30,3 +30,4 @@ function App() {
 export default App
 ```
 - Step 8: Run `npm run dev` in the cmd terminal of VS Code
+
