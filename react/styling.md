@@ -8,7 +8,8 @@ Inside the component we can implement styling by:-
 - Inline CSS styling
 - Internal or Embedded CSS styling
 
-Let us style the Navbar Component globally in index.css file
+## Global Styling
+Let us style the Navbar Component **globally** in index.css file
 ```
 import React from 'react'
 
@@ -36,10 +37,93 @@ In index.css file,
   padding: 10px;
 }
 ```
-Now let's perform inline style in img tag:-
+
+## Inline styling
+Now let's perform **inline styling** in img tag:-
 ```
 <img src={profilePic} alt="Noimage" style={{"height":"400px","width":"310px"}}/>
 ```
+
+## Internal styling
+```
+import React from 'react'
+
+function Project() {
+  const headingStyle = {
+    "textAlign":"center",
+    "color":"purple",
+    "textDecoration":"underline"
+  }
+  return (
+    <div>
+        <h1 style={headingStyle}>Projects</h1>
+    </div>
+  )
+}
+
+export default Project
+```
+
+## Module Styling
+Another way of styling the component is through module 
+
+```
+import React from 'react'
+
+function Project() {
+  const headingStyle = {
+    "textAlign":"center",
+    "color":"purple",
+    "textDecoration":"underline"
+  }
+  return (
+    <div>
+        <h1 style={headingStyle}>Projects</h1>
+        <div className='card'>
+            <h2 className='card-title'>ExpenseTracker</h2>
+            <div className='card-body'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis vitae suscipit, laudantium culpa, beatae tenetur quisquam labore 
+                in minus amet odit ullam sint repellat dicta recusandae aperiam cumque autem!
+
+            </div>
+
+            <div className='card-footer'>
+                <span>Python|</span>  <span>Django |</span> <span>HTMl |</span>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Project
+```
+
+
+To style the class card, create a project.module.css file
+```
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+```
+
+In Project.jsx file import the module. `import myStyle from './project.module.css'`
+
+Now edit the className as myStyle.card. 
+```
+<div className={myStyle.card}>
+  <h2 className='card-title'>ExpenseTracker</h2>
+  <div className='card-body'>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perferendis vitae suscipit, laudantium culpa, beatae tenetur quisquam labore 
+    in minus amet odit ullam sint repellat dicta recusandae aperiam cumque autem!
+    </div>
+    <div className='card-footer'>
+        <span>Python|</span>  <span>Django |</span> <span>HTMl |</span>
+    </div>
+</div>
+```
+
+
 
 ## Insert image
 Just like the static folder in django, React has **assests** folder to store the images, videos etc.

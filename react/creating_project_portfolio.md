@@ -41,3 +41,20 @@ function Hero() {
 
 export default Hero
 ```
+
+
+Now create the Project component, Project.jsx and render it inside App.jsx
+
+```
+import React from 'react'
+
+function Project() {
+  return (
+    <div>
+        <h1 style={{"textAlign":"center"}}>Projects</h1>
+    </div>
+  )
+}
+
+export default Project
+```
