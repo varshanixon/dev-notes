@@ -1,6 +1,6 @@
 # Project PortfolioSelf
 
-- create React project 'PortfolioSelf'. Refer [getting_started](getting_started.md)
+- create React project 'PortfolioSelf'. Refer [getting_started](02-getting_started.md)
 - create Navbar component (Navbar.jsx) and render it inside App Component.
 ```
 import React from 'react'
@@ -43,18 +43,21 @@ export default Hero
 ```
 
 
-Now create the Project component, Project.jsx and render it inside App.jsx
+Now create the Project component, Project.jsx and render it inside App.jsx. Refer [styling](04-styling.md) also.
 
+
+Similarly create Skills.jsx and Education.jsx. Refer [props](05-props.md)
 ```
 import React from 'react'
 
-function Project() {
+function Skills({skillSets}) { //Destructuring
   return (
     <div>
-        <h1 style={{"textAlign":"center"}}>Projects</h1>
+        <h1>Skills</h1>
+        <h3>{skillSets.map(s=><span>{s} |</span>)}</h3>
     </div>
   )
 }
 
-export default Project
+export default Skills
 ```

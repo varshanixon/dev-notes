@@ -50,3 +50,17 @@ Every time work is saved, Git creates a commit. A commit is  a snapshot of all f
 - It can be used to convert an existing, unversioned project to a Git repo or initialize a new empty repo.
 - It creates a .git subdirectory in the current working directory.
 
+## GITHUB
+- First click on new repository button
+- Give repository name, (most preferably in the format 'my-first-repo')
+- Now click on create repository button at the end. 
+- In the repository click on Code button of the repository and copy the https link of the repo
+- To connect the remote repo with local repo, type the command in git (cmd), `git remote add https://github.com/linkofrepo`
+
+## GETTING STARTED WITH GIT
+- Install Git
+- Create an account in the locally installed Git
+- Open cmd and type the command, `git config --global user.name "yourname"` and enter.
+- Next type in the email id using the command, `git config --global user.email "youremail"`
+- Now to check if the account was created, type and enter, `git config --list`
+- From here on you can perform the git operations
