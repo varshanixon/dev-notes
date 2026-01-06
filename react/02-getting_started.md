@@ -1,4 +1,4 @@
-# Project Creation and 
+# Getting Started 
 - Step 1: Install node.js
 > Node.js is a JS runtime environment designed to run JS outside web browser
 - Step 2: Open cmd and go to the directory you want to create the project and perform the following:-
